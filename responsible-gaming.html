@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verantwortungsvolles Spielen – Responsible Gaming</title>
+    <meta name="description" content="Verantwortungsvolles Spielen bei Rocket Play Casino: Informationen zu Spielerschutz, Selbstbeschränkungen und Hilfsangeboten bei Spielsucht.">
+    <link rel="canonical" href="https://rocket-play-casino.de/responsible-gaming" />
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Verantwortungsvolles Spielen – Responsible Gaming">
+    <meta property="og:description" content="Umfassender Spielerschutz bei Rocket Play Casino: Selbstbeschränkungen, Sperrmöglichkeiten und Hilfsangebote.">
+    <meta property="og:image" content="https://rocket-play-casino.de/images/responsible-gaming-hero.jpg">
+    <meta property="og:url" content="https://rocket-play-casino.de/responsible-gaming">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Verantwortungsvolles Spielen – Responsible Gaming">
+    <meta name="twitter:description" content="Verantwortungsvolles Spielen bei Rocket Play Casino: Spielerschutz und Hilfsangebote.">
+    <meta name="twitter:image" content="https://rocket-play-casino.de/images/responsible-gaming-hero.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        /* Base Styles - Mobile First */
+        :root {
+            --primary-color: #1a2b4c;
+            --accent-color: #e63946;
+            --success-color: #2e7d32;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --text-light: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--accent-color);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            display: none;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0d1529 100%);
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        .breadcrumb {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255,255,255,0.9);
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-color);
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin: 1.2rem 0 0.5rem;
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        /* Special Boxes for Responsible Gaming */
+        .warning-box {
+            background-color: #fff3f3;
+            border: 2px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .warning-box h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        .info-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+        }
+        .help-box {
+            background-color: #e8f5e9;
+            border: 2px solid var(--success-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .help-box h3 {
+            color: var(--success-color);
+            margin-top: 0;
+        }
+        .self-exclusion-box {
+            background-color: #fff8e1;
+            border: 2px solid #ffb300;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .self-exclusion-box h3 {
+            color: #ff6f00;
+            margin-top: 0;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .last-updated {
+            background-color: #fff3f3;
+            border: 1px solid #ffcdd2;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        /* Tool List */
+        .tool-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .tool-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+        .tool-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .tool-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        /* Footer */
+        footer {
+            background-color: #0d1529;
+            color: white;
+            padding: 2rem 0 1rem;
+        }
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        .footer-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            align-items: center;
+        }
+        .footer-logo-item {
+            flex: 0 0 auto;
+        }
+        .footer-logo-item img {
+            height: 35px;
+            width: auto;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+        }
+        /* Table of Contents */
+        .rg-toc {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .rg-toc h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .rg-toc ul {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0.5rem;
+        }
+        .rg-toc li {
+            margin-bottom: 0.3rem;
+        }
+        .rg-toc a {
+            color: var(--dark-color);
+            display: block;
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+        }
+        .rg-toc a:hover {
+            background-color: rgba(26, 43, 76, 0.1);
+            color: var(--primary-color);
+        }
+        /* Emergency Contact */
+        .emergency-contact {
+            background: linear-gradient(135deg, #ff5252 0%, #d32f2f 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .emergency-contact h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .emergency-contact a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            nav ul {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .rg-toc ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .tool-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            main {
+                padding: 3rem 0;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">Rocket Play Casino</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Bonus</a></li>
+                    <li><a href="#">Spiele</a></li>
+                    <li><a href="#">Erfahrungen</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Startseite</a> &rsaquo; <span>Verantwortungsvolles Spielen</span>
+            </div>
+            <h1>Verantwortungsvolles Spielen</h1>
+            <p>Spielerschutz, Selbstbeschränkungen und Hilfsangebote bei Rocket Play Casino</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="last-updated">
+            <strong>Letzte Aktualisierung:</strong> 15. Januar 2026
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="emergency-contact">
+            <h3>❗ Soforthilfe bei Spielsucht</h3>
+            <p>Wenn Sie oder jemand in Ihrem Umfeld ein Problem mit Glücksspiel hat, wenden Sie sich umgehend an:</p>
+            <p><strong>Bundeszentrale für gesundheitliche Aufklärung (BZgA)</strong><br>
+            Telefon: <a href="tel:+498002137270">0800 137 27 00</a> (kostenlos, anonym)<br>
+            Online-Beratung: <a href="https://www.check-dein-spiel.de" target="_blank" rel="nofollow noopener noreferrer">www.check-dein-spiel.de</a></p>
+        </div>
+
+        <!-- Table of Contents -->
+        <section class="rg-toc">
+            <h3>Inhaltsverzeichnis</h3>
+            <ul>
+                <li><a href="#was-ist">Was ist verantwortungsvolles Spielen?</a></li>
+                <li><a href="#warnzeichen">Warnzeichen für problematisches Spielverhalten</a></li>
+                <li><a href="#selbsttest">Selbsttest: Habe ich ein Spielproblem?</a></li>
+                <li><a href="#selbstbeschraenkungen">Selbstbeschränkungs-Tools bei Rocket Play Casino</a></li>
+                <li><a href="#selbstausschluss">Selbstausschluss (Self-Exclusion)</a></li>
+                <li><a href="#hilfsangebote">Externe Hilfsangebote und Beratungsstellen</a></li>
+                <li><a href="#eltern">Informationen für Eltern und Angehörige</a></li>
+                <li><a href="#massnahmen">Unsere Maßnahmen zum Spielerschutz</a></li>
+            </ul>
+        </section>
+
+        <section id="was-ist">
+            <h2>Was ist verantwortungsvolles Spielen?</h2>
+            
+            <div class="info-box">
+                <h3>Unsere Philosophie</h3>
+                <p>Bei Rocket Play Casino betrachten wir Glücksspiel als Unterhaltungsform, nicht als Einkommensquelle. Wir setzen uns aktiv für den Spielerschutz ein und fördern ein verantwortungsbewusstes Spielverhalten.</p>
+            </div>
+
+            <p>Verantwortungsvolles Spielen bedeutet, Glücksspiel als Freizeitbeschäftigung zu betrachten und klare Grenzen zu setzen. Dazu gehören:</p>
+            
+            <ul>
+                <li>Festlegung von Zeit- und Geldlimits vor dem Spielbeginn</li>
+                <li>Spielen nur mit Geld, dessen Verlust verkraftbar ist</li>
+                <li>Niemals versuchen, Verluste zurückzugewinnen</li>
+                <li>Spielen niemals als Lösung für finanzielle Probleme nutzen</li>
+                <li>Regelmäßige Pausen einlegen</li>
+                <li>Spiel nicht mit Alkohol oder anderen Substanzen kombinieren</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>Wichtiger Hinweis</h3>
+                <p>Glücksspiel kann süchtig machen! Schätzungen zufolge entwickeln etwa 1-2% der erwachsenen Bevölkerung in Deutschland ein problematisches Spielverhalten. Erkennen Sie frühzeitig Warnzeichen und nutzen Sie unsere Schutzmaßnahmen.</p>
+            </div>
+        </section>
+
+        <section id="warnzeichen">
+            <h2>Warnzeichen für problematisches Spielverhalten</h2>
+            
+            <p>Folgende Anzeichen können auf ein sich entwickelndes Spielproblem hinweisen:</p>
+
+            <div class="warning-box">
+                <h3>Psychologische Warnzeichen</h3>
+                <ul>
+                    <li>Ständiges Denken an Glücksspiel</li>
+                    <li>Steigender Drang, höhere Einsätze zu tätigen</li>
+                    <li>Unruhe oder Reizbarkeit bei Spielpausen</li>
+                    <li>Spielen zur Stressbewältigung oder Flucht vor Problemen</li>
+                    <li>Wiederholte erfolglose Versuche, das Spielen zu reduzieren</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h3>Finanzielle Warnzeichen</h3>
+                <ul>
+                    <li>Spielen mit Geld, das für lebensnotwendige Ausgaben gedacht war</li>
+                    <li>Geld leihen oder Kredite für Glücksspiel aufnehmen</li>
+                    <li>Verheimlichen von Spielausgaben gegenüber Familie/Freunden</li>
+                    <li>Verkauf von Besitz zur Finanzierung des Spielens</li>
+                    <li>Zunehmende Verschuldung durch Glücksspiel</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h3>Soziale Warnzeichen</h3>
+                <ul>
+                    <li>Vernachlässigung von Familie, Freunden und Hobbys</li>
+                    <li>Leistungsabfall in Beruf oder Ausbildung</li>
+                    <li>Lügen über das Ausmaß des Spielens</li>
+                    <li>Konflikte mit nahestehenden Personen wegen des Spielens</li>
+                    <li>Sozialer Rückzug und Isolation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="selbsttest">
+            <h2>Selbsttest: Habe ich ein Spielproblem?</h2>
+            
+            <div class="info-box">
+                <h3>Beantworten Sie sich selbst folgende Fragen:</h3>
+                <ol>
+                    <li>Haben Sie jemals die Zeit beim Spielen aus den Augen verloren?</li>
+                    <li>Haben Sie jemals länger gespielt als geplant?</li>
+                    <li>Haben Sie jemals mehr Geld eingesetzt als Sie sich leisten konnten zu verlieren?</li>
+                    <li>Haben Sie jemals gelogen, um Ihr Spielverhalten zu verheimlichen?</li>
+                    <li>Hat Ihr Spielen jemals negative Auswirkungen auf Beziehungen oder Arbeit gehabt?</li>
+                    <li>Haben Sie jemals versucht, Spielverluste durch weiteres Spielen zurückzugewinnen?</li>
+                    <li>Fühlen Sie sich unruhig oder gereizt, wenn Sie nicht spielen können?</li>
+                    <li>Denken Sie häufig über Glücksspiel nach oder planen Sie Spielsitzungen?</li>
+                </ol>
+            </div>
+
+            <p>Wenn Sie mehrere dieser Fragen mit "Ja" beantworten, könnte ein Spielproblem vorliegen. Wir empfehlen:</p>
+            
+            <div class="help-box">
+                <h3>Empfohlene Schritte</h3>
+                <ul>
+                    <li>Nutzen Sie unsere Selbstbeschränkungs-Tools (siehe unten)</li>
+                    <li>Führen Sie ein Spieltagebuch über Zeit und Geld</li>
+                    <li>Sprechen Sie mit einer Vertrauensperson über Ihr Spielverhalten</li>
+                    <li>Kontaktieren Sie eine Beratungsstelle (siehe externe Hilfsangebote)</li>
+                    <li>Erwägen Sie einen temporären oder dauerhaften Selbstausschluss</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="selbstbeschraenkungen">
+            <h2>Selbstbeschränkungs-Tools bei Rocket Play Casino</h2>
+            
+            <p>Wir bieten verschiedene Tools, mit denen Sie Ihr Spielverhalten kontrollieren können:</p>
+
+            <div class="tool-list">
+                <div class="tool-item">
+                    <h4>Einzahlungslimits</h4>
+                    <p>Legen Sie tägliche, wöchentliche oder monatliche Limits für Ihre Einzahlungen fest. Diese Limits können jederzeit erhöht, aber nur nach einer 24-stündigen Abkühlphase verringert werden.</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Verlustlimits</h4>
+                    <p>Setzen Sie Limits für maximale Verluste in bestimmten Zeiträumen. Bei Erreichen des Limits wird Ihr Konto automatisch für den Rest des Zeitraums gesperrt.</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Spielzeitlimits</h4>
+                    <p>Begrenzen Sie Ihre tägliche oder wöchentliche Spielzeit. Sie erhalten Warnungen, wenn Sie sich Ihrem Limit nähern, und werden nach Überschreitung automatisch abgemeldet.</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Spielpause (Cool-Off)</h4>
+                    <p>Legen Sie eine freiwillige Spielpause von 24 Stunden bis zu 6 Wochen fest. Während dieser Zeit können Sie nicht auf Ihr Konto zugreifen.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Wie aktiviere ich Selbstbeschränkungen?</h3>
+                <p>Loggen Sie sich in Ihr Spielerkonto ein und navigieren Sie zu "Einstellungen" → "Spielerschutz". Dort können Sie alle verfügbaren Selbstbeschränkungs-Tools konfigurieren. Änderungen an Limits werden nach einer 24-stündigen Bedenkzeit wirksam.</p>
+            </div>
+        </section>
+
+        <section id="selbstausschluss">
+            <h2>Selbstausschluss (Self-Exclusion)</h2>
+            
+            <div class="self-exclusion-box">
+                <h3>Wichtige Information zum Selbstausschluss</h3>
+                <p>Ein Selbstausschluss ist eine ernste und verbindliche Entscheidung. Während des Selbstausschlusses können Sie nicht auf Ihr Konto zugreifen, Einzahlungen tätigen oder an Promotionen teilnehmen.</p>
+            </div>
+
+            <h3>Verfügbare Selbstausschluss-Optionen</h3>
+            <ul>
+                <li><strong>Temporärer Selbstausschluss:</strong> 6 Monate, 1 Jahr oder 2 Jahre</li>
+                <li><strong>Dauerhafter Selbstausschluss:</strong> Unbefristete Sperrung des Kontos</li>
+                <li><strong>OSR-Sperre:</strong> Überregionale Sperre bei der OASIS-Selbstsperrdatei</li>
+            </ul>
+
+            <h3>Was Sie beachten sollten:</h3>
+            <div class="warning-box">
+                <ul>
+                    <li>Ein Selbstausschluss kann nicht vorzeitig aufgehoben werden</li>
+                    <li>Nach Ablauf eines temporären Selbstausschlusses erfolgt keine automatische Reaktivierung</li>
+                    <li>Sie können sich während des Selbstausschlusses nicht neu registrieren</li>
+                    <li>Restguthaben werden nach Sicherheitsüberprüfung ausgezahlt</li>
+                    <li>Der Selbstausschluss gilt für alle Rocket Play Casino Produkte</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>So beantragen Sie einen Selbstausschluss</h3>
+                <p>Um einen Selbstausschluss zu beantragen, kontaktieren Sie unseren Kundenservice:</p>
+                <p><strong>E-Mail:</strong> spielerschutz@rocket-play-casino.de<br>
+                <strong>Telefon:</strong> +49 (0)30 12345680<br>
+                <strong>Online-Formular:</strong> Verfügbar in Ihrem Spielerkonto unter "Einstellungen" → "Spielerschutz"</p>
+            </div>
+        </section>
+
+        <section id="hilfsangebote">
+            <h2>Externe Hilfsangebote und Beratungsstellen</h2>
+            
+            <div class="help-box">
+                <h3>Kostenlose und anonyme Beratung</h3>
+                <p>Die folgenden Organisationen bieten professionelle Hilfe bei Spielsucht an:</p>
+            </div>
+
+            <h3>Nationale Hilfsangebote in Deutschland</h3>
+            
+            <div class="tool-list">
+                <div class="tool-item">
+                    <h4>Bundeszentrale für gesundheitliche Aufklärung (BZgA)</h4>
+                    <p><strong>Telefon:</strong> 0800 137 27 00 (kostenlos)<br>
+                    <strong>Website:</strong> <a href="https://www.check-dein-spiel.de" target="_blank" rel="nofollow noopener noreferrer">www.check-dein-spiel.de</a><br>
+                    <strong>Angebote:</strong> Telefonberatung, Online-Beratung, Selbsttest, Informationsmaterial</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Caritas Suchthilfe</h4>
+                    <p><strong>Telefon:</strong> 0180 140 140 (kostenpflichtig)<br>
+                    <strong>Website:</strong> <a href="https://www.suchthilfe.de" target="_blank" rel="nofollow noopener noreferrer">www.suchthilfe.de</a><br>
+                    <strong>Angebote:</strong> Beratungsstellen vor Ort, Online-Beratung, Selbsthilfegruppen</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Diakonie Suchthilfe</h4>
+                    <p><strong>Website:</strong> <a href="https://www.diakonie.de" target="_blank" rel="nofollow noopener noreferrer">www.diakonie.de</a><br>
+                    <strong>Angebote:</strong> Regionale Beratungsstellen, ambulante und stationäre Therapien</p>
+                </div>
+                
+                <div class="tool-item">
+                    <h4>Anonyme Spieler</h4>
+                    <p><strong>Website:</strong> <a href="https://www.anonyme-spieler.de" target="_blank" rel="nofollow noopener noreferrer">www.anonyme-spieler.de</a><br>
+                    <strong>Angebote:</strong> Selbsthilfegruppen nach dem 12-Schritte-Programm, Online-Treffen</p>
+                </div>
+            </div>
+
+            <h3>Internationale Hilfsangebote</h3>
+            <ul>
+                <li><strong>GamCare (UK):</strong> 0808 8020 133 - <a href="https://www.gamcare.org.uk" target="_blank" rel="nofollow noopener noreferrer">www.gamcare.org.uk</a></li>
+                <li><strong>Gamblers Anonymous (International):</strong> <a href="https://www.gamblersanonymous.org" target="_blank" rel="nofollow noopener noreferrer">www.gamblersanonymous.org</a></li>
+                <li><strong>National Council on Problem Gambling (USA):</strong> 1-800-522-4700</li>
+            </ul>
+        </section>
+
+        <section id="eltern">
+            <h2>Informationen für Eltern und Angehörige</h2>
+            
+            <div class="info-box">
+                <h3>Schutz Minderjähriger</h3>
+                <p>Glücksspiel ist für Personen unter 18 Jahren gesetzlich verboten. Wir ergreifen umfangreiche Maßnahmen, um den Zugang Minderjähriger zu verhindern:</p>
+            </div>
+
+            <h3>Technische Schutzmaßnahmen</h3>
+            <ul>
+                <li>Altersverifikation bei der Registrierung</li>
+                <li>Regelmäßige Stichprobenkontrollen</li>
+                <li>Zahlungsmethoden, die Altersüberprüfung erfordern</li>
+                <li>Blockierung verdächtiger Konten</li>
+            </ul>
+
+            <h3>Tipps für Eltern</h3>
+            <div class="help-box">
+                <ul>
+                    <li>Informieren Sie Kinder über die Risiken von Glücksspiel</li>
+                    <li>Nutzen Sie Jugendschutzsoftware auf allen Geräten</li>
+                    <li>Überwachen Sie Online-Aktivitäten Ihrer Kinder</li>
+                    <li>Sprechen Sie offen über Geld und verantwortungsvollen Umgang</li>
+                    <li>Setzen Sie klare Regeln für Internetnutzung</li>
+                </ul>
+            </div>
+
+            <h3>Hilfe für Angehörige</h3>
+            <p>Wenn Sie vermuten, dass eine Person in Ihrem Umfeld ein Spielproblem hat:</p>
+            <ul>
+                <li>Sprechen Sie Ihre Sorgen in einem ruhigen Moment an</li>
+                <li>Vermeiden Sie Vorwürfe oder Beschuldigungen</li>
+                <li>Bieten Sie Unterstützung bei der Suche nach professioneller Hilfe an</li>
+                <li>Informieren Sie sich über Spielsucht und Behandlungsmöglichkeiten</li>
+                <li>Schützen Sie sich selbst vor finanziellen Konsequenzen</li>
+            </ul>
+        </section>
+
+        <section id="massnahmen">
+            <h2>Unsere Maßnahmen zum Spielerschutz</h2>
+            
+            <div class="info-box">
+                <h3>Unser Engagement</h3>
+                <p>Rocket Play Casino verpflichtet sich zu höchsten Standards im Spielerschutz. Wir investieren kontinuierlich in Prävention, Aufklärung und Unterstützung.</p>
+            </div>
+
+            <h3>Präventive Maßnahmen</h3>
+            <ul>
+                <li>Altersverifikation aller Spieler</li>
+                <li>Transparente Informationen über Gewinnwahrscheinlichkeiten</li>
+                <li>Klare Darstellung von Bonusbedingungen</li>
+                <li>Regelmäßige Schulungen unserer Mitarbeiter zum Thema Spielsucht</li>
+                <li>Kooperation mit unabhängigen Spielerschutzorganisationen</li>
+            </ul>
+
+            <h3>Interventionsmaßnahmen</h3>
+            <ul>
+                <li>Früherkennung riskanter Spielmuster durch Monitoring-Systeme</li>
+                <li>Persönliche Ansprache bei Verdacht auf problematisches Spielverhalten</li>
+                <li>Angebot von Selbstbeschränkungs-Tools und Beratung</li>
+                <li>Zusammenarbeit mit externen Beratungsstellen</li>
+                <li>Teilnahme an der OASIS-Selbstsperrdatei</li>
+            </ul>
+
+            <div class="contact-info">
+                <h3>Kontakt zum Spielerschutz-Team</h3>
+                <p>Unser spezielles Spielerschutz-Team steht Ihnen für Fragen und Unterstützung zur Verfügung:</p>
+                <p><strong>E-Mail:</strong> spielerschutz@rocket-play-casino.de<br>
+                <strong>Telefon:</strong> +49 (0)30 12345680 (Mo-Fr 9-18 Uhr)<br>
+                <strong>Postanschrift:</strong> Rocket Play Casino, Spielerschutz, Musterstraße 123, 10115 Berlin</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-conditions">Terms & Conditions</a>
+                <a href="/responsible-gaming">Responsible Gaming</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/kontakt">Kontakt</a>
+            </div>
+            
+            <div class="footer-logos">
+                <div class="footer-logo-item">
+                    <img src="/images/footer-18.png" 
+                         alt="Alterskennzeichnung 18+: Nur für volljährige Spieler ab 18 Jahren" 
+                         width="50" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-begambleaware.png" 
+                         alt="BeGambleAware Organisation für verantwortungsvolles Glücksspiel" 
+                         width="120" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamcare.png" 
+                         alt="GamCare Beratungsstelle für Spieler mit Glücksspielproblemen" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamban.png" 
+                         alt="Gamban Software zur Selbstsperre bei Online Glücksspiel" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-betblocker.png" 
+                         alt="BetBlocker Tool zur Blockade von Glücksspielwebsites" 
+                         width="100" height="40" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Rocket Play Casino Reviews. Alle Rechte vorbehalten.</p>
+                <p>Diese Seite bietet unabhängige Informationen und ist nicht mit Rocket Play Casino verbunden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Verantwortungsvolles Spielen – Responsible Gaming bei Rocket Play Casino",
+        "description": "Umfassende Informationen zum Spielerschutz bei Rocket Play Casino: Selbstbeschränkungen, Warnzeichen bei Spielsucht und Hilfsangebote.",
+        "url": "https://rocket-play-casino.de/responsible-gaming",
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-01-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rocket Play Casino Reviews",
+            "url": "https://rocket-play-casino.de/"
+        },
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Welche Selbstbeschränkungs-Tools bietet Rocket Play Casino?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Rocket Play Casino bietet Einzahlungslimits, Verlustlimits, Spielzeitlimits und temporäre Spielpausen (Cool-Off). Diese Tools können im Spielerkonto unter 'Einstellungen' → 'Spielerschutz' konfiguriert werden."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie kann ich mich selbst ausschließen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sie können einen Selbstausschluss für 6 Monate, 1 Jahr, 2 Jahre oder dauerhaft beantragen. Kontaktieren Sie dazu unseren Kundenservice per E-Mail (spielerschutz@rocket-play-casino.de) oder nutzen Sie das Online-Formular in Ihrem Konto."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Gibt es kostenlose Beratung bei Spielsucht?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, die Bundeszentrale für gesundheitliche Aufklärung (BZgA) bietet unter 0800 137 27 00 kostenlose und anonyme Beratung an. Weitere Hilfsangebote finden Sie auf unserer Responsible-Gaming-Seite."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was sind Warnzeichen für problematisches Spielverhalten?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Warnzeichen sind: ständiges Denken an Glücksspiel, steigende Einsätze, Spielen zur Stressbewältigung, Lügen über Spielausgaben, Vernachlässigung von Familie/Beruf und finanzielle Probleme durch Spielen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie schützt Rocket Play Casino Minderjährige?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Wir führen Altersverifikation bei der Registrierung durch, kontrollieren regelmäßig Spielerkonten, nutzen Altersüberprüfung bei Zahlungsmethoden und bieten Jugendschutzinformationen für Eltern an."
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Simple JS for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    if (nav.style.display === 'block') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'block';
+                    }
+                });
+            }
+            
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth < 768 && 
+                    !event.target.matches('.menu-toggle') && 
+                    !event.target.closest('nav') && 
+                    nav.style.display === 'block') {
+                    nav.style.display = 'none';
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu if open
+                        if (window.innerWidth < 768) {
+                            nav.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

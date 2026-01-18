@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <meta name="description" content="Kontakt zu Rocket Play Casino: Kontaktformular, Support-Email, Telefonnummer und alle Kontaktmöglichkeiten für deutsche Spieler.">
+    <link rel="canonical" href="https://rocket-play-casino.de/kontakt" />
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Kontakt">
+    <meta property="og:description" content="Alle Kontaktmöglichkeiten zu Rocket Play Casino: Support, Fragen und Anliegen schnell klären.">
+    <meta property="og:image" content="https://rocket-play-casino.de/images/kontakt-hero.jpg">
+    <meta property="og:url" content="https://rocket-play-casino.de/kontakt">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kontakt">
+    <meta name="twitter:description" content="Kontakt zu Rocket Play Casino: Support und Kontaktmöglichkeiten.">
+    <meta name="twitter:image" content="https://rocket-play-casino.de/images/kontakt-hero.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        /* Base Styles - Mobile First */
+        :root {
+            --primary-color: #1a2b4c;
+            --accent-color: #e63946;
+            --success-color: #2e7d32;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --text-light: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--accent-color);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            display: none;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0d1529 100%);
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        .breadcrumb {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255,255,255,0.9);
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-color);
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin: 1.2rem 0 0.5rem;
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        /* Contact Boxes */
+        .contact-info-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .contact-info-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .support-box {
+            background-color: #e8f5e9;
+            border: 2px solid var(--success-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .support-box h3 {
+            color: var(--success-color);
+            margin-top: 0;
+        }
+        .emergency-box {
+            background-color: #fff3f3;
+            border: 2px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        .emergency-box h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        .faq-box {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .faq-box h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        /* Contact Methods Grid */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .contact-method {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-method i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .contact-method h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(26, 43, 76, 0.1);
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0d1529;
+        }
+        .btn-accent {
+            background-color: var(--accent-color);
+        }
+        .btn-accent:hover {
+            background-color: #d32f2f;
+        }
+        /* Business Hours */
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .hour-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .hour-item.active {
+            background-color: #f0f7ff;
+            border-color: var(--primary-color);
+        }
+        /* Footer */
+        footer {
+            background-color: #0d1529;
+            color: white;
+            padding: 2rem 0 1rem;
+        }
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        .footer-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            align-items: center;
+        }
+        .footer-logo-item {
+            flex: 0 0 auto;
+        }
+        .footer-logo-item img {
+            height: 35px;
+            width: auto;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+        }
+        /* Responsive */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            nav ul {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .contact-methods {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hours-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            main {
+                padding: 3rem 0;
+            }
+            .contact-methods {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .hours-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">Rocket Play Casino</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Bonus</a></li>
+                    <li><a href="#">Spiele</a></li>
+                    <li><a href="#">Erfahrungen</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Startseite</a> &rsaquo; <span>Kontakt</span>
+            </div>
+            <h1>Kontakt & Support</h1>
+            <p>Wir sind für Sie da – Kontaktieren Sie uns bei Fragen und Anliegen</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="contact-info-box">
+            <h3>Kontaktinformationen auf einen Blick</h3>
+            <p>Unser Support-Team steht Ihnen für alle Fragen zur Verfügung. Wählen Sie den für Sie passenden Kontaktweg – wir bemühen uns um schnellstmögliche Antworten.</p>
+        </div>
+
+        <!-- Contact Methods -->
+        <section class="contact-methods">
+            <div class="contact-method">
+                <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">📧</div>
+                <h4>E-Mail Support</h4>
+                <p>support@rocket-play-casino.de</p>
+                <p>Antwort innerhalb von 24 Stunden</p>
+            </div>
+            
+            <div class="contact-method">
+                <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">📞</div>
+                <h4>Telefon Support</h4>
+                <p>+49 (0)30 12345678</p>
+                <p>Mo-Fr: 9:00-18:00 Uhr</p>
+            </div>
+            
+            <div class="contact-method">
+                <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">💬</div>
+                <h4>Live Chat</h4>
+                <p>Direkt auf der Website</p>
+                <p>Soforthilfe innerhalb von 5 Minuten</p>
+            </div>
+            
+            <div class="contact-method">
+                <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">📝</div>
+                <h4>Kontaktformular</h4>
+                <p>Nachricht direkt an uns</p>
+                <p>Systematische Bearbeitung</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Kontaktformular</h2>
+            <p>Senden Sie uns Ihre Nachricht direkt über dieses Formular. Bitte füllen Sie alle Pflichtfelder aus.</p>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Vor- und Nachname *</label>
+                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse *</label>
+                        <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Betreff *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Bitte wählen...</option>
+                            <option value="account">Konto-Fragen</option>
+                            <option value="bonus">Bonus-Anfrage</option>
+                            <option value="payment">Ein- oder Auszahlung</option>
+                            <option value="technical">Technisches Problem</option>
+                            <option value="feedback">Feedback & Vorschläge</option>
+                            <option value="other">Sonstiges</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ihre Nachricht *</label>
+                        <textarea id="message" name="message" required placeholder="Bitte beschreiben Sie Ihr Anliegen ausführlich..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-accent">Nachricht senden</button>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--gray-color);">* Pflichtfelder</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Business Hours -->
+        <section>
+            <h2>Support-Erreichbarkeit</h2>
+            <p>Unser Kundenservice ist zu folgenden Zeiten für Sie erreichbar:</p>
+            
+            <div class="hours-grid">
+                <div class="hour-item">
+                    <h4>Montag - Freitag</h4>
+                    <p>9:00 - 18:00 Uhr</p>
+                    <p>Telefon, E-Mail, Live Chat</p>
+                </div>
+                
+                <div class="hour-item">
+                    <h4>Samstag</h4>
+                    <p>10:00 - 16:00 Uhr</h4>
+                    <p>E-Mail & Live Chat</p>
+                </div>
+                
+                <div class="hour-item">
+                    <h4>Sonntag & Feiertage</h4>
+                    <p>E-Mail Support</p>
+                    <p>Antwort innerhalb von 48h</p>
+                </div>
+                
+                <div class="hour-item active">
+                    <h4>Jetzt erreichbar?</h4>
+                    <p id="currentStatus" style="color: var(--success-color); font-weight: bold;">Lädt...</p>
+                    <p>Live Chat verfügbar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Contacts -->
+        <section>
+            <h2>Spezialisierte Ansprechpartner</h2>
+            <p>Für spezifische Anfragen wenden Sie sich direkt an unsere Fachabteilungen:</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">💰</div>
+                    <h4>Finanzen & Auszahlungen</h4>
+                    <p>finance@rocket-play-casino.de</p>
+                    <p>Transaktionen & Verifikation</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">🛡️</div>
+                    <h4>Spielerschutz</h4>
+                    <p>spielerschutz@rocket-play-casino.de</p>
+                    <p>Selbstbeschränkungen & Hilfe</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">⚖️</div>
+                    <h4>Rechtliche Anfragen</h4>
+                    <p>legal@rocket-play-casino.de</p>
+                    <p>AGB, Datenschutz, Compliance</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">🤝</div>
+                    <h4>Partnerschaften</h4>
+                    <p>partners@rocket-play-casino.de</p>
+                    <p>Affiliate-Programm & Kooperationen</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Postal Address -->
+        <section>
+            <h2>Postanschrift & Büroadresse</h2>
+            
+            <div class="contact-info-box">
+                <h3>Rocket Play Casino Ltd.</h3>
+                <p><strong>Geschäftsadresse:</strong><br>
+                Musterstraße 123<br>
+                10115 Berlin<br>
+                Deutschland</p>
+                
+                <p><strong>Handelsregister:</strong><br>
+                Amtsgericht Berlin Charlottenburg<br>
+                HRB 123456</p>
+                
+                <p><strong>Umsatzsteuer-ID:</strong><br>
+                DE 123456789</p>
+                
+                <p><strong>Geschäftsführer:</strong><br>
+                Max Mustermann</p>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section>
+            <h2>Dringende Angelegenheiten</h2>
+            
+            <div class="emergency-box">
+                <h3>❗ Wichtige Hinweise für dringende Anfragen</h3>
+                <p>Für folgende Angelegenheiten kontaktieren Sie uns bitte umgehend:</p>
+                <ul>
+                    <li><strong>Verdacht auf unbefugten Kontozugriff:</strong> Sofortige Sperrung erforderlich</li>
+                    <li><strong>Fehlerhafte Transaktionen:</strong> Innerhalb von 24 Stunden melden</li>
+                    <li><strong>Technische Probleme bei Auszahlungen:</strong> Direkte Unterstützung notwendig</li>
+                    <li><strong>Sicherheitsbedenken:</strong> Schnelle Reaktion erforderlich</li>
+                </ul>
+                <p><strong>Telefonische Erreichbarkeit für dringende Fälle:</strong> +49 (0)30 12345679</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <h2>Häufige Fragen (FAQ)</h2>
+            
+            <div class="faq-box">
+                <h3>Wie lange dauert eine Antwort auf meine E-Mail?</h3>
+                <p>Unser Team bemüht sich, alle E-Mails innerhalb von 24 Stunden zu beantworten. In Stoßzeiten oder an Wochenenden kann die Antwort bis zu 48 Stunden dauern.</p>
+            </div>
+            
+            <div class="faq-box">
+                <h3>Kann ich auch außerhalb der Geschäftszeiten Hilfe erhalten?</h3>
+                <p>Ja, unser E-Mail-Support ist rund um die Uhr erreichbar. Außerhalb der Geschäftszeiten bearbeiten wir Anfragen in der Reihenfolge des Eingangs.</p>
+            </div>
+            
+            <div class="faq-box">
+                <h3>Welche Informationen benötige ich für eine Support-Anfrage?</h3>
+                <p>Bitte halten Sie folgende Informationen bereit: Ihren Benutzernamen, E-Mail-Adresse des Kontos und möglichst genaue Beschreibung des Problems. Bei Transaktionsfragen die Transaktions-ID.</p>
+            </div>
+            
+            <div class="faq-box">
+                <h3>Wie kann ich meine Kontaktdaten ändern?</h3>
+                <p>Kontaktdaten können Sie in Ihrem Spielerkonto unter "Einstellungen" → "Persönliche Daten" aktualisieren. Aus Sicherheitsgründen benötigen wir für bestimmte Änderungen eine Verifizierung.</p>
+            </div>
+        </section>
+
+        <!-- Support Quality -->
+        <section>
+            <h2>Unser Support-Versprechen</h2>
+            
+            <div class="support-box">
+                <h3>✅ Was Sie von unserem Support erwarten können</h3>
+                <ul>
+                    <li><strong>Schnelle Antwortzeiten:</strong> Maximal 24 Stunden für E-Mails</li>
+                    <li><strong>Fachkundige Beratung:</strong> Geschulte Support-Mitarbeiter</li>
+                    <li><strong>Mehrsprachiger Service:</strong> Deutsch und Englisch</li>
+                    <li><strong>Diskrete Behandlung:</strong> Vertraulicher Umgang mit Ihren Daten</li>
+                    <li><strong>Lösungsorientierung:</strong> Wir suchen gemeinsam nach einer Lösung</li>
+                    <li><strong>Feedback-Kultur:</strong> Wir lernen aus Ihrem Feedback</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Alternative Contact -->
+        <section>
+            <h2>Alternative Kontaktmöglichkeiten</h2>
+            <p>Sie können uns auch über soziale Medien erreichen oder unser Feedback-Formular nutzen:</p>
+            
+            <div class="contact-methods" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">📱</div>
+                    <h4>Soziale Medien</h4>
+                    <p>Twitter: @RocketPlayCasino</p>
+                    <p>Facebook: /RocketPlayCasinoDE</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">📊</div>
+                    <h4>Feedback & Beschwerden</h4>
+                    <p>feedback@rocket-play-casino.de</p>
+                    <p>Beschwerdemanagement</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-conditions">Terms & Conditions</a>
+                <a href="/responsible-gaming">Responsible Gaming</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/kontakt">Kontakt</a>
+            </div>
+            
+            <div class="footer-logos">
+                <div class="footer-logo-item">
+                    <img src="/images/footer-18.png" 
+                         alt="Alterskennzeichnung 18+: Nur für volljährige Spieler ab 18 Jahren" 
+                         width="50" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-begambleaware.png" 
+                         alt="BeGambleAware Organisation für verantwortungsvolles Glücksspiel" 
+                         width="120" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamcare.png" 
+                         alt="GamCare Beratungsstelle für Spieler mit Glücksspielproblemen" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamban.png" 
+                         alt="Gamban Software zur Selbstsperre bei Online Glücksспил" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-betblocker.png" 
+                         alt="BetBlocker Tool zur Blockade von Glücksspielwebsites" 
+                         width="100" height="40" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Rocket Play Casino Reviews. Alle Rechte vorbehalten.</p>
+                <p>Diese Seite bietet unabhängige Informationen und ist nicht mit Rocket Play Casino verbunden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Kontakt – Kontaktformular und Support für Rocket Play Casino",
+        "description": "Alle Kontaktmöglichkeiten zu Rocket Play Casino: Support-Email, Telefonnummer, Kontaktformular und Geschäftsadresse.",
+        "url": "https://rocket-play-casino.de/kontakt",
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-01-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rocket Play Casino Reviews",
+            "url": "https://rocket-play-casino.de/"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+49-30-12345678",
+            "email": "support@rocket-play-casino.de",
+            "availableLanguage": ["German", "English"],
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        },
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Wie kann ich Rocket Play Casino kontaktieren?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sie können uns per E-Mail (support@rocket-play-casino.de), Telefon (+49 (0)30 12345678), Live-Chat oder über das Kontaktformular auf dieser Seite erreichen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie lange dauert eine Antwort auf meine Support-Anfrage?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Unser Support-Team antwortet in der Regel innerhalb von 24 Stunden auf E-Mail-Anfragen. Im Live-Chat erhalten Sie meist innerhalb von 5 Minuten eine Antwort."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Zu welchen Zeiten ist der Support erreichbar?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Unser Telefon-Support ist Montag bis Freitag von 9:00 bis 18:00 Uhr erreichbar. E-Mail-Support und Live-Chat stehen auch am Wochenende zur Verfügung."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Welche Informationen benötige ich für eine Support-Anfrage?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bitte halten Sie Ihren Benutzernamen, die registrierte E-Mail-Adresse und bei Transaktionsfragen die Transaktions-ID bereit. Eine genaue Beschreibung des Problems beschleunigt die Bearbeitung."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Gibt es spezielle Kontakte für Spielerschutz oder rechtliche Fragen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, für Spielerschutz-Angelegenheiten wenden Sie sich an spielerschutz@rocket-play-casino.de, für rechtliche Fragen an legal@rocket-play-casino.de."
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    if (nav.style.display === 'block') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'block';
+                    }
+                });
+            }
+            
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth < 768 && 
+                    !event.target.matches('.menu-toggle') && 
+                    !event.target.closest('nav') && 
+                    nav.style.display === 'block') {
+                    nav.style.display = 'none';
+                }
+            });
+            
+            // Current Status Check
+            function updateCurrentStatus() {
+                const now = new Date();
+                const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+                const hour = now.getHours();
+                const statusElement = document.getElementById('currentStatus');
+                
+                // Business hours: Mon-Fri 9-18, Sat 10-16
+                let isOpen = false;
+                
+                if (day >= 1 && day <= 5) { // Monday to Friday
+                    isOpen = hour >= 9 && hour < 18;
+                } else if (day === 6) { // Saturday
+                    isOpen = hour >= 10 && hour < 16;
+                }
+                
+                if (statusElement) {
+                    if (isOpen) {
+                        statusElement.textContent = 'Jetzt erreichbar ✅';
+                        statusElement.style.color = '#2e7d32';
+                    } else {
+                        statusElement.textContent = 'Zurzeit nicht erreichbar';
+                        statusElement.style.color = '#e63946';
+                    }
+                }
+            }
+            
+            // Update status on load and every minute
+            updateCurrentStatus();
+            setInterval(updateCurrentStatus, 60000);
+            
+            // Contact Form Submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simple validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value.trim();
+                    
+                    if (!name || !email || !subject || !message) {
+                        alert('Bitte füllen Sie alle Pflichtfelder aus.');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+                        return;
+                    }
+                    
+                    // In a real implementation, this would send data to a server
+                    // For now, we'll show a success message
+                    alert('Vielen Dank für Ihre Nachricht! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.');
+                    contactForm.reset();
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu if open
+                        if (window.innerWidth < 768) {
+                            nav.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden – 404 Error</title>
+    <meta name="description" content="Die von Ihnen gesuchte Seite wurde nicht gefunden..">
+    <meta name="robots" content="noindex, follow">
+    
+    <meta property="og:title" content="Seite nicht gefunden – 404 Error">
+    <meta property="og:description" content="Die gesuchte Seite existiert nicht..">
+    <meta property="og:image" content="https://rocket-play-casino.de/images/404-error.jpg">
+    <meta property="og:url" content="https://rocket-play-casino.de/404">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seite nicht gefunden – 404 Error">
+    <meta name="twitter:description" content="Seite nicht gefunden – 404">
+    <meta name="twitter:image" content="https://rocket-play-casino.de/images/404-error.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        /* Base Styles - Mobile First */
+        :root {
+            --primary-color: #1a2b4c;
+            --accent-color: #e63946;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --text-light: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--accent-color);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            display: none;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        /* 404 Content */
+        .error-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .error-description {
+            color: var(--gray-color);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        /* Suggested Pages */
+        .suggested-pages {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .suggested-pages h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+        .page-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .page-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+        .page-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .page-card p {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0d1529;
+            color: white;
+        }
+        .btn-accent {
+            background-color: var(--accent-color);
+        }
+        .btn-accent:hover {
+            background-color: #d32f2f;
+        }
+        /* Search Box */
+        .search-box {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        .search-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .search-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(26, 43, 76, 0.1);
+        }
+        /* Error Details */
+        .error-details {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .error-details h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .error-details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .error-details li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .error-details li:before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+        /* Footer */
+        footer {
+            background-color: #0d1529;
+            color: white;
+            padding: 2rem 0 1rem;
+            margin-top: auto;
+        }
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        .footer-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            align-items: center;
+        }
+        .footer-logo-item {
+            flex: 0 0 auto;
+        }
+        .footer-logo-item img {
+            height: 35px;
+            width: auto;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+        }
+        /* Responsive */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            nav ul {
+                display: flex;
+            }
+            .error-code {
+                font-size: 8rem;
+            }
+            .error-message {
+                font-size: 2rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .pages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            .error-code {
+                font-size: 10rem;
+            }
+            .error-message {
+                font-size: 2.5rem;
+            }
+            .footer-links {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            .pages-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">Rocket Play Casino</a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Bonus</a></li>
+                    <li><a href="#">Spiele</a></li>
+                    <li><a href="#">Erfahrungen</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="container">
+        <div class="error-content">
+            <div>
+                <div class="error-code">404</div>
+                <h1 class="error-message">Seite nicht gefunden</h1>
+                <p class="error-description">
+                    Die von Ihnen aufgerufene Seite existiert leider nicht mehr oder die URL ist falsch geschrieben. 
+                    Vielleicht wurde sie verschoben oder gelöscht.
+                </p>
+                
+                <div style="margin: 2rem 0;">
+                    <a href="/" class="btn btn-accent">Zur Startseite</a>
+                    <a href="/kontakt" class="btn" style="margin-left: 1rem;">Support kontaktieren</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <h3 style="text-align: center; margin-bottom: 1rem;">Suchen Sie nach etwas Bestimmtem?</h3>
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" placeholder="Was suchen Sie? Z.B. 'Bonus', 'Anmeldung', 'Spiele'..." id="searchQuery">
+                <button type="submit" class="btn">Suchen</button>
+            </form>
+        </div>
+
+        <!-- Suggested Pages -->
+        <div class="suggested-pages">
+            <h3>Vielleicht suchen Sie eine dieser Seiten:</h3>
+            
+            <div class="pages-grid">
+                <div class="page-card">
+                    <h4>Startseite</h4>
+                    <p>Zurück zur Hauptseite mit allen Informationen zu Rocket Play Casino</p>
+                    <a href="/" class="btn">Zur Startseite</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Bonus & Promotionen</h4>
+                    <p>Aktuelle Bonusangebote, Willkommensbonus und Promo-Codes</p>
+                    <a href="/bonus" class="btn">Zu den Boni</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Spieleangebot</h4>
+                    <p>Alle Slots, Tischspiele und Live-Casino Spiele im Überblick</p>
+                    <a href="/spiele" class="btn">Zu den Spielen</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Erfahrungen & Bewertungen</h4>
+                    <p>Nutzerbewertungen und echte Erfahrungen mit Rocket Play Casino</p>
+                    <a href="/erfahrungen" class="btn">Zu den Erfahrungen</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Anmeldung & Login</h4>
+                    <p>So registrieren Sie sich und melden sich bei Rocket Play Casino an</p>
+                    <a href="/#anmeldung" class="btn">Zur Anmeldung</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Mobile App</h4>
+                    <p>Informationen zur mobilen App für iOS und Android Geräte</p>
+                    <a href="/#mobile" class="btn">Zur Mobile App</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Kontakt & Support</h4>
+                    <p>Kontaktformular, Support-Email und alle Kontaktmöglichkeiten</p>
+                    <a href="/kontakt" class="btn">Zum Kontakt</a>
+                </div>
+                
+                <div class="page-card">
+                    <h4>Verantwortungsvolles Spielen</h4>
+                    <p>Informationen zu Spielerschutz und verantwortungsvollem Spielen</p>
+                    <a href="/responsible-gaming" class="btn">Zum Spielerschutz</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Details -->
+        <div class="error-details">
+            <h4>Was könnte passiert sein?</h4>
+            <ul>
+                <li>Die Seite wurde verschoben oder umbenannt</li>
+                <li>Sie haben einen veralteten Link oder Bookmark verwendet</li>
+                <li>Die URL wurde falsch eingegeben</li>
+                <li>Die Seite wurde aus technischen Gründen temporär deaktiviert</li>
+                <li>Es handelt sich um eine interne Seite, die nicht öffentlich zugänglich ist</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem;">Was können Sie tun?</h4>
+            <ul>
+                <li>Überprüfen Sie die URL auf Tippfehler</li>
+                <li>Gehen Sie zurück zur <a href="/">Startseite</a> und navigieren von dort</li>
+                <li>Nutzen Sie die Suchfunktion oben</li>
+                <li>Besuchen Sie eine der empfohlenen Seiten</li>
+                <li>Kontaktieren Sie unseren <a href="/kontakt">Support</a> bei anhaltenden Problemen</li>
+            </ul>
+        </div>
+
+        <!-- Report Problem -->
+        <div style="text-align: center; margin: 2rem 0;">
+            <p>Haben Sie einen defekten Link auf unserer Website gefunden?</p>
+            <a href="/kontakt" class="btn btn-accent">Problem melden</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-conditions">Terms & Conditions</a>
+                <a href="/responsible-gaming">Responsible Gaming</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/kontakt">Kontakt</a>
+            </div>
+            
+            <div class="footer-logos">
+                <div class="footer-logo-item">
+                    <img src="/images/footer-18.png" 
+                         alt="Alterskennzeichnung 18+: Nur für volljährige Spieler ab 18 Jahren" 
+                         width="50" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-begambleaware.png" 
+                         alt="BeGambleAware Organisation für verantwortungsvolles Glücksspiel" 
+                         width="120" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamcare.png" 
+                         alt="GamCare Beratungsstelle für Spieler mit Glücksspielproblemen" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-gamban.png" 
+                         alt="Gamban Software zur Selbstsperre bei Online Glücksspiel" 
+                         width="100" height="40" loading="lazy">
+                </div>
+                <div class="footer-logo-item">
+                    <img src="/images/footer-betblocker.png" 
+                         alt="BetBlocker Tool zur Blockade von Glücksspielwebsites" 
+                         width="100" height="40" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Rocket Play Casino Reviews. Alle Rechte vorbehalten.</p>
+                <p>Diese Seite bietet unabhängige Informationen und ist nicht mit Rocket Play Casino verbunden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Seite nicht gefunden – 404 Error | Rocket Play Casino",
+        "description": "Die gesuchte Seite wurde nicht gefunden. Hier finden Sie alternative Seiten zu Rocket Play Casino.",
+        "url": "https://rocket-play-casino.de/404",
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Warum sehe ich diese 404-Fehlerseite?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Eine 404-Fehlerseite erscheint, wenn die angeforderte URL nicht auf dem Server gefunden wurde. Dies kann passieren, wenn die Seite verschoben, gelöscht wurde oder die URL falsch eingegeben wurde."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie finde ich die gesuchte Seite?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sie können zur Startseite zurückkehren, die Suchfunktion nutzen oder eine der empfohlenen Seiten besuchen. Oft finden Sie dort die gewünschten Informationen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was soll ich tun, wenn ich einen defekten Link gefunden habe?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Wenn Sie auf einen defekten Link auf unserer Website gestoßen sind, kontaktieren Sie bitte unseren Support über die Kontaktseite. Wir korrigieren den Link dann umgehend."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kann ich die Seite trotzdem irgendwie erreichen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Prüfen Sie zunächst, ob die URL korrekt ist. Falls nicht, nutzen Sie unsere Navigation oder Suchfunktion. Die gesuchten Inhalte sind oft auf anderen Seiten verfügbar."
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    if (nav.style.display === 'block') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'block';
+                    }
+                });
+            }
+            
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth < 768 && 
+                    !event.target.matches('.menu-toggle') && 
+                    !event.target.closest('nav') && 
+                    nav.style.display === 'block') {
+                    nav.style.display = 'none';
+                }
+            });
+            
+            // Search Form Submission
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchQuery');
+            
+            if (searchForm && searchInput) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const query = searchInput.value.trim().toLowerCase();
+                    
+                    if (!query) {
+                        alert('Bitte geben Sie einen Suchbegriff ein.');
+                        return;
+                    }
+                    
+                    // Simple search logic
+                    const searchMap = {
+                        'bonus': '/bonus',
+                        'willkommensbonus': '/bonus',
+                        'promo': '/bonus',
+                        'spiele': '/spiele',
+                        'slots': '/spiele',
+                        'automaten': '/spiele',
+                        'live casino': '/spiele',
+                        'erfahrungen': '/erfahrungen',
+                        'bewertungen': '/erfahrungen',
+                        'review': '/erfahrungen',
+                        'anmeldung': '/#anmeldung',
+                        'registrierung': '/#anmeldung',
+                        'login': '/#anmeldung',
+                        'app': '/#mobile',
+                        'mobile': '/#mobile',
+                        'kontakt': '/kontakt',
+                        'support': '/kontakt',
+                        'spielerschutz': '/responsible-gaming',
+                        'verantwortungsvoll': '/responsible-gaming',
+                        'selbstausschluss': '/responsible-gaming',
+                        'agb': '/terms-conditions',
+                        'datenschutz': '/privacy-policy',
+                        'impressum': '/impressum',
+                        'disclaimer': '/disclaimer'
+                    };
+                    
+                    let foundPage = null;
+                    
+                    // Check for exact matches first
+                    for (const [keyword, url] of Object.entries(searchMap)) {
+                        if (query.includes(keyword)) {
+                            foundPage = url;
+                            break;
+                        }
+                    }
+                    
+                    if (foundPage) {
+                        window.location.href = foundPage;
+                    } else {
+                        // If no exact match, show suggestions
+                        const suggestions = Object.keys(searchMap).filter(keyword => 
+                            keyword.includes(query.substring(0, 3))
+                        );
+                        
+                        if (suggestions.length > 0) {
+                            alert(`Meinten Sie vielleicht: ${suggestions.slice(0, 3).join(', ')}?`);
+                        } else {
+                            alert('Keine passenden Seiten gefunden. Bitte versuchen Sie einen anderen Suchbegriff oder besuchen Sie unsere Startseite.');
+                        }
+                    }
+                });
+            }
+            
+            // Track 404 error for analytics (simulated)
+            console.log('404 Error - Page not found. URL:', window.location.href);
+            console.log('Referrer:', document.referrer);
+            
+            // Offer to redirect to homepage after 30 seconds
+            setTimeout(function() {
+                if (confirm('Sie sind seit 30 Sekunden auf dieser Fehlerseite. Möchten Sie zur Startseite weitergeleitet werden?')) {
+                    window.location.href = '/';
+                }
+            }, 30000);
+        });
+    </script>
+</body>
+</html>
